@@ -10,16 +10,22 @@
     }
     video {
       display: block;
-  margin: 0 auto;
-  max-width: 100vw;
+      margin: 0 auto;
+      max-width: 100vw;
       max-height: 100vh;
-}
+    }
   </style>
 </head>
 <body>
-<video preload="auto" autoplay loop muted class="vjs-tech" data-id="content" id="vjs_video_3_html5_api" src="https://video.twimg.com/ext_tw_video/644305716849700864/pu/vid/720x720/m_LKRwfgmUHPxHsK.mp4"><source src="https://video.twimg.com/ext_tw_video/644305716849700864/pu/vid/720x720/m_LKRwfgmUHPxHsK.mp4" type="video/mp4"></video>
+  <video preload="auto" autoplay loop muted class="video" data-id="content" id="vjs_video_3_html5_api" src="https://video.twimg.com/ext_tw_video/644305716849700864/pu/vid/720x720/m_LKRwfgmUHPxHsK.mp4"><source src="https://video.twimg.com/ext_tw_video/644305716849700864/pu/vid/720x720/m_LKRwfgmUHPxHsK.mp4" type="video/mp4"></video>
   <audio autoplay class="audio noshow">
     <source src="http://ukip.sexy/audio.mp3" type="audio/mpeg">
   </audio>
+  <script>
+    var el = document.querySelector('.video');
+    el.onplay = function() {
+      el.playbackRate = 0.5;
+    }
+  </script>
 </body>
 </html>

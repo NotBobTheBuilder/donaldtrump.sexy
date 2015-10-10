@@ -4,28 +4,42 @@
   <meta charset="utf-8">
   <title>donaldtrump.sexy</title>
   <style>
-    html, body {
+    html, body, .prepare {
       margin: 0;
+      padding: 0;
       background-color: black;
+      width: 100%;
+      height: 100%;
     }
-    video {
-      display: block;
-      margin: 0 auto;
-      max-width: 100vw;
-      max-height: 100vh;
+
+    .prepare {
+      display: table;
+    }
+
+    h1 {
+      width: 100%;
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      font-family: 'Helvetica', sans-serif;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <video preload="auto" autoplay loop muted class="video" data-id="content" id="vjs_video_3_html5_api" src="https://video.twimg.com/ext_tw_video/644305716849700864/pu/vid/720x720/m_LKRwfgmUHPxHsK.mp4"><source src="https://video.twimg.com/ext_tw_video/644305716849700864/pu/vid/720x720/m_LKRwfgmUHPxHsK.mp4" type="video/mp4"></video>
-  <audio autoplay class="audio noshow">
-    <source src="http://ukip.sexy/audio.mp3" type="audio/mpeg">
-  </audio>
-  <script>
-    var el = document.querySelector('.video');
-    el.onplay = function() {
-      el.playbackRate = 0.5;
-    }
-  </script>
+    <div class="prepare">
+        <h1>Prepare Yourself.</h1>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41203555-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
